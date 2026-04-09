@@ -382,10 +382,10 @@ const initialSiteConfig: SiteConfig = {
   skills: [
     { id: '1', name: 'Figma', iconImage: `${import.meta.env.BASE_URL}images/Figma.png` },
     { id: '2', name: 'Sketch', iconImage: `${import.meta.env.BASE_URL}images/Sketch.png` },
-    { id: '3', name: 'Photoshop', iconImage: `${import.meta.env.BASE_URL}images/Photoshop.png` },
-    { id: '4', name: 'Illustrator', iconImage: `${import.meta.env.BASE_URL}images/Illustrator.png` },
-    { id: '5', name: 'XD', iconImage: `${import.meta.env.BASE_URL}images/xd.png` },
-    { id: '6', name: 'Indesign', iconImage: `${import.meta.env.BASE_URL}images/indesign.png` },
+    { id: '3', name: 'Photoshop', iconImage: `${import.meta.env.BASE_URL}images/Photoshop.png?v=2` },
+    { id: '4', name: 'Illustrator', iconImage: `${import.meta.env.BASE_URL}images/Illustrator.png?v=2` },
+    { id: '5', name: 'XD', iconImage: `${import.meta.env.BASE_URL}images/XD.png?v=2` },
+    { id: '6', name: 'Indesign', iconImage: `${import.meta.env.BASE_URL}images/indesign.png?v=2` },
     { id: '7', name: 'Gemini', iconImage: `${import.meta.env.BASE_URL}images/Gemini.png` },
     { id: '8', name: 'Dzine', iconImage: `${import.meta.env.BASE_URL}images/Dzine.png` },
     { id: '9', name: 'Claude', iconImage: `${import.meta.env.BASE_URL}images/Claude.png` },
@@ -1282,7 +1282,9 @@ function App() {
                       whileHover={{ y: -5, backgroundColor: 'rgba(139, 92, 246, 0.1)', borderColor: 'rgba(139, 92, 246, 0.3)' }}
                       onClick={() => {
                         if (['Photoshop', 'Illustrator', 'XD', 'Indesign'].includes(tool.name) && tool.iconImage) {
-                          setPortfolioViewerImage(`images/${tool.iconImage.split('/').pop()}`);
+                          // Extract file name and remove ?v=2 string
+                          const filename = tool.iconImage.split('/').pop()?.split('?')[0];
+                          setPortfolioViewerImage(`images/${filename}`);
                         }
                       }}
                       className={`flex flex-col items-center justify-center gap-3 p-4 bg-bg-card rounded-[10px] border border-white/5 transition-all duration-300 group ${['Photoshop', 'Illustrator', 'XD', 'Indesign'].includes(tool.name) ? 'cursor-pointer' : ''}`}
