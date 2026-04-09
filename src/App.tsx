@@ -287,7 +287,7 @@ const initialProjects: Project[] = [
     keywords: ['UX Research', 'User Analysis', 'Video Editing'],
     images: [`${import.meta.env.BASE_URL}images/Kakao_main.png`],
     link: '#PROJECT',
-    portfolioImage: '[공유] 카스UX리서치_최종보고서 (160308).pdf'
+    portfolioImage: 'Kakao_UX_Research.pdf'
   }
 ];
 
@@ -435,7 +435,7 @@ const initialSiteConfig: SiteConfig = {
         { id: '3', period: '2020. 06. 08 - 2023. 06. 31', role: '마케팅팀', company: '(주)글라이드', job: '라이브방송 기획 및 출연, 상세페이지/웹배너 제작, SNS(Instagram, Meta, Youtube) 운영' },
         { id: '4', period: '2018. 03. 12 - 2020. 03. 31', role: '디자인팀', company: '한국정보기술(주)', job: '조달청/지자체 제출용 제안서 및 발표자료 디자인(52건)' },
         { id: '5', period: '2016. 07. 25 - 2018. 02. 28', role: '마케팅팀', company: '(주)브로스코', job: '라이선스 상품화 디자인 제작/검수 및 온·오프라인 프로모션 디자인' },
-        { id: '6', period: '2015. 12. 08 - 2016. 06. 08', role: 'UX Research part', company: '(주)카카오', job: '앱 별 사용자 분석 및 결과보고서 작성, UX 분석용 임팩트 영상 편집' }
+        { id: '6', period: '2015. 12. 08 - 2016. 06. 08', role: 'UX Research part', company: '(주)카카오/그린맨파워', job: '앱 별 사용자 분석 및 결과보고서 작성, UX 분석용 임팩트 영상 편집' }
       ],
       license: [
         { id: '1', name: '컴퓨터 그래픽스운용기능사 1급', issuer: '한국산업인력공단' },
@@ -509,7 +509,8 @@ const initialSiteConfig: SiteConfig = {
         { id: '2', name: '머티리얼즈파크(주)', role: 'Brand VMD', period: '2023.08 ~ 2025.05', reason: '직무 확장', business: 'B2C 도소매업', scale: '중소기업', revenue: '467억', employees: '110명', workplace: '성남 판교' },
         { id: '3', name: '(주)글라이드', role: 'Web/SNS Design', period: '2020.06 ~ 2023.06', reason: '경영 악화', business: '식품 판매업', scale: '대기업', revenue: '32억', employees: '-', workplace: '성남 판교' },
         { id: '4', name: '한국정보기술(주)', role: 'Proposal(PPT) Design', period: '2018.03 ~ 2020.03', reason: '근무 조건', business: '응용 소프트웨어 개발 및 공급업', scale: '중소기업', revenue: '726억', employees: '331명', workplace: '성남 판교' },
-        { id: '5', name: '(주)브로스코', role: 'Product Design', period: '2016.07 ~ 2018.02', reason: '조직 규모', business: '캐릭터 디자인 개발 라이센스 대행사', scale: '중소기업', revenue: '-', employees: '10+', workplace: '성남 판교' }
+        { id: '5', name: '(주)브로스코', role: 'Product Design', period: '2016.07 ~ 2018.02', reason: '조직 규모', business: '캐릭터 디자인 개발 라이센스 대행사', scale: '중소기업', revenue: '-', employees: '10+', workplace: '성남 판교' },
+        { id: '6', name: '(주)카카오/그린맨파워', role: 'UX Research', period: '2015.12 ~ 2016.06', reason: '계약 만료', business: '아웃소싱 대기업 파견 계약', scale: '중소기업', revenue: '-', employees: '1,000+', workplace: '성남 판교' }
       ]
     },
     project: {
