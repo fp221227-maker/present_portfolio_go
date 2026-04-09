@@ -1257,11 +1257,11 @@ function App() {
 
         {/* Skills & AI Workflow */}
         <section id="COMPANY" className="mb-32">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="flex flex-col gap-16">
             <div>
               <h2 className="text-sm font-bold text-accent-purple tracking-widest uppercase mb-2">{siteConfig.expertiseLabel}</h2>
               <h3 className="text-4xl font-bold mb-8 whitespace-pre-line">{siteConfig.expertiseTitle}</h3>
-              <div className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+              <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
                 {siteConfig.skills.map(tool => {
                   const ToolIcon = ({
                     Palette, Layers, Figma, Monitor, Layout, Zap, Cpu, Terminal, Github, Code
@@ -1353,10 +1353,10 @@ function App() {
           </div>
         </section>
 
-        {/* Timeline & Awards */}
+        {/* Timeline & Experience */}
         <section id="SUBCONTRACT" className="mb-32">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2">
+          <div className="grid grid-cols-1 gap-12">
+            <div>
               <h3 className="text-3xl font-bold mb-8 flex items-center gap-2">
                 <Briefcase className="text-accent-purple" /> {siteConfig.experienceTitle}
               </h3>
@@ -1368,21 +1368,6 @@ function App() {
                     <div className="text-xl font-bold mb-1">{item.company}</div>
                     <div className="text-sm font-medium text-white/80 mb-3">{item.role}</div>
                     <p className="text-text-gray text-sm leading-relaxed">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-3xl font-bold mb-8 flex items-center gap-2">
-                <FileText className="text-accent-purple" /> {siteConfig.awardsTitle}
-              </h3>
-              <div className="space-y-4">
-                {awards.map(award => (
-                  <div key={award.id} className="p-4 bg-bg-card rounded-[10px] border border-white/5">
-                    <div className="text-xs text-accent-purple font-bold mb-1">{award.year}</div>
-                    <div className="font-bold text-sm mb-1">{award.title}</div>
-                    <div className="text-xs text-text-gray">{award.organization}</div>
                   </div>
                 ))}
               </div>
